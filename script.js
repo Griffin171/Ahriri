@@ -85,7 +85,7 @@ function toEmbedURL(url){
     }
     if(host.includes("clips.twitch.tv")){
       const clipId = u.pathname.split("/").filter(Boolean)[0];
-      if(clipId) return `https://clips.twitch.tv/embed?clip=${clipId}&parent=${location.hostname||'localhost'}`;
+      if(clipId) return `https://clips.twitch.tv/embed?clip=${clipId}&parent=${location.hostname||'localhost'}&autoplay=false`;
     }
     return url;
   }catch{
