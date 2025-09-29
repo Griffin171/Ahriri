@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahriri — Streamer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <div class="avatar" id="avatar-placeholder" aria-hidden="true"></div>
+        <div class="brand-text">
+          <h1 class="brand-name">Ahriri</h1>
+          <p class="brand-tagline">Ahriri — Streamer</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#live" class="nav-link">Ao vivo</a>
+        <a href="#clips" class="nav-link">Clipes</a>
+        <a href="#schedule" class="nav-link">Agenda</a>
+        <a href="#socials" class="nav-link">Redes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-text">
+          <h2>Bem-vind@s a comunidade da <span class="accent">Ahriri</span></h2>
+          <div id="primarySocials" class="buttons-row">
+            <a class="btn" href="https://twitch.tv/ahriri_zz" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="1.71 0 20.57 24"><path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"></path></svg></a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="banner-placeholder" role="img" aria-label="Banner da streamer"></div>
+        </div>
+      </div>
+      <div class="shadow-deco shadow-deco-top" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h3>Sobre a Ahriri</h3>
+        <p>Carismática, engraçada, joga uma variedade de jogos e é apaixonada pelo shadow!</p>
+      </div>
+    </section>
+
+    <section id="live" class="section alt">
+      <div class="container">
+        <h3>Ao vivo na Twitch</h3>
+        <p class="muted">Se estiver online, ⤵️ player e chat estarão disponíveis.</p>
+        <div class="live-embed">
+          <div class="live-player">
+            <iframe id="twitchPlayer" title="Player Twitch" loading="lazy" frameborder="0"></iframe>
+          </div>
+          <div class="live-chat">
+            <iframe id="twitchChat" title="Twitch Chat" loading="lazy" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clips" class="section">
+      <div class="container">
+        <h3>Clipes & Destaques</h3>
+        <div id="clipsGrid" class="clips-grid"></div>
+      </div>
+      <div class="shadow-deco shadow-deco-side" aria-hidden="true"></div>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <div class="container narrow">
+        <h3>Agenda</h3>
+        <p class="muted">Horário fixo mostrado no fuso local do visitante.</p>
+        <div class="schedule-card">
+          <div class="schedule-row"><span class="label">Hora (UTC):</span><span id="utcTime" class="value">—</span></div>
+          <div class="schedule-row"><span class="label">Seu horário:</span><span id="localTime" class="value">—</span></div>
+          <div class="schedule-row"><span class="label">Dias:</span><span id="scheduleDays" class="value">Sáb • Dom</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="socials" class="section">
+      <div class="container">
+        <h3>Redes</h3>
+        <div id="socialHub" class="social-grid">
+          <a class="social-card" href="https://twitch.tv/ahriri_zz" target="_blank" rel="noopener noreferrer"><span class="label">Twitch</span></a>
+          <a class="social-card" href="https://www.tiktok.com/@ahriri_zz" target="_blank" rel="noopener noreferrer"><span class="label">TikTok</span></a>
+          <a class="social-card" href="https://twitter.com/ahriri_zz" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a>
+          <a class="social-card" href="https://www.instagram.com/ahriri_zz/" target="_blank" rel="noopener noreferrer"><span class="label">Instagram</span></a>
+          <a class="social-card" href="https://www.youtube.com/@ahririzz" target="_blank" rel="noopener noreferrer"><span class="label">YouTube</span></a>
+        </div>
+      </div>
+      <div class="shadow-deco shadow-deco-footer" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Ahriri</span>
+      <span class="muted">Feito com HTML • CSS • JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
