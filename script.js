@@ -96,3 +96,5 @@ function toEmbedURL(url){
 function getHostLabel(url){
   try{ const u = new URL(url); return u.hostname.replace("www.",""); }catch{return "external";}
 }
+
+/*git commit rerun*/
