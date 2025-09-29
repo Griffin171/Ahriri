@@ -70,6 +70,11 @@ svg{
   width: 1.2em;
 }
 
+section#clips{
+  margin-top: 0;
+  background-color: var(--bg);
+}
+
 .accent{ 
   color: var(--accent);
   text-shadow:
