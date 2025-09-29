@@ -1,9 +1,9 @@
 const CONFIG = {
   TWITCH_CHANNEL: "ahriri_zz",
   CLIPS: [
-    { title: "Ativaria o sininho?", url: "https://www.twitch.tv/ahriri_zz/clip/MistyGentleTroutCoolCat-XiaaDa_T5Frk6nN8&parent=https://griffin171.github.io/Ahriri/" },
-    { title: "quem canta?", url: "https://www.twitch.tv/ahriri_zz/clip/ResoluteHumbleHummingbirdYouWHY-DAbQHkgyA32ik0_G&parent=https://griffin171.github.io/Ahriri/" },
-    { title: "noobinho", url: "https://www.twitch.tv/ahriri_zz/clip/ElatedPoorPuppyPicoMause-7-4pOoUkrEGBa2lC&parent=https://griffin171.github.io/Ahriri/" }
+    { title: "Ativaria o sininho?", url: "https://clips.twitch.tv/MistyGentleTroutCoolCat-XiaaDa_T5Frk6nN8" },
+    { title: "quem canta?", url: "https://clips.twitch.tv/ResoluteHumbleHummingbirdYouWHY-DAbQHkgyA32ik0_G" },
+    { title: "noobinho", url: "https://clips.twitch.tv/ElatedPoorPuppyPicoMause-7-4pOoUkrEGBa2lC" }
   ],
   SCHEDULE: { utcHour: 22, utcMinute: 30, days: ["Todos os dias"] }
 };
