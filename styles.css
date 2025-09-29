@@ -108,8 +108,8 @@ section#clips{
 }
 
 #about{
-  padding-top: 0;
   padding-bottom: 64px;
+  background-color: var(--bg);
 }
 
 section#hero{
