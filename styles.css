@@ -159,11 +159,17 @@ a.btn:hover{
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 12px;
-  width:fit-content;
+  width: fit-content;
   position: absolute;
   left: 8%;
-  top: 20rem;
 }
+
+@media(max-width:768px){
+  #evento{
+    left: 30%;
+  }
+}
+
 #countdown {
   font-size: 2rem;
   margin-top: 10px;
