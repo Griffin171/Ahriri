@@ -5,7 +5,7 @@ const CONFIG = {
     { title: "quem canta?", url: "https://clips.twitch.tv/ResoluteHumbleHummingbirdYouWHY-DAbQHkgyA32ik0_G" },
     { title: "noobinho", url: "https://clips.twitch.tv/ElatedPoorPuppyPicoMause-7-4pOoUkrEGBa2lC" }
   ],
-  SCHEDULE: { utcHour: 22, utcMinute: 30, days: ["Todos os dias"] }
+  SCHEDULE: { utcHour: 22, utcMinute: 30, days: ["Seg", "Ter", "Qua", "Qui", "Sex"] }
 };
 
 (function initTheme(){
