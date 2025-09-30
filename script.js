@@ -97,4 +97,27 @@ function getHostLabel(url){
   try{ const u = new URL(url); return u.hostname.replace("www.",""); }catch{return "external";}
 }
 
+// Contagem regressiva
+function startCountdown() {
+  const countdown = document.getElementById('countdown');
+  const targetDate = new Date(countdown.dataset.date).getTime();
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+    if(diff <= 0) {
+      countdown.innerHTML = 'Evento ao vivo!';
+      return;
+    }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((diff % (1000*60)) / 1000);
+    countdown.innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+}
+document.addEventListener('DOMContentLoaded', startCountdown);
+
 /*git commit rerun*/
