@@ -102,7 +102,7 @@ section#clips{
 }
 
 .avatar{
-  background-image: url(https://r2.guns.lol/7b946ccd-62f1-470c-8c4e-025f581ddf7a.jpg);
+  background-image: url("https://r2.guns.lol/7b946ccd-62f1-470c-8c4e-025f581ddf7a.jpg");
   background-size: cover;
   background-position: center;
 }
