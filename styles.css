@@ -255,3 +255,12 @@ a.btn:hover{
   pointer-events: auto;
   animation: fadeIn 200ms forwards;
 }
+
+@media(max-width: 2560px){
+  #evento{
+    left: 28%;
+  }
+  .narrow{
+    margin-top: 100px;
+  }
+}
